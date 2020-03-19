@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+     {% if title %}
+        <title>{{ title }} - 1516КПК</title>
+    {% else %}
+        <title>1516КПК</title>
+    {% endif %}
+</head>
+<body>
+    <div class="container">
+        <div class="grid base">
+            <header>
+                <a href="{{ url_for('home') }}" class="title">1516КПК</a>
+            </header>
+            <div class="text-box">
+                {% block text %}{% endblock %}
+            </div>
+            <div class="grid buttons">
+                {% block body %}{% endblock %}
+            </div>
+            <footer>
+                <h6 class="text footer-text">Sakharov Artyom, 2020 &copy</h6>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

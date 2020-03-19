@@ -1,0 +1,121 @@
+body {
+    margin: 0 auto;
+    font-family: PoiretOne;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    height: 100vh;
+    background: #F7F7F7;
+    text-size: 20px;
+}
+
+header {
+    grid-area: header;
+    align-self: center;
+}
+.title {
+    text-decoration: none;
+    font-size: 3em;
+    color: #42BC90;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    align-self: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+
+    background: #F7F7F7;
+}
+
+.grid {
+    display:grid;
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.base {
+    grid-template-columns: auto auto ;
+    grid-template-rows: 60px auto auto 30px;
+    grid-template-areas:"header header"
+                        "text-box text-box"
+                        "button-block button-block"
+                        "footer footer";
+
+}
+.buttons {
+    grid-area: button-block;
+
+}
+.home-buttons {
+    grid-template-columns: 3fr 1fr;
+
+}
+.quiz-buttons {
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+}
+
+.button {
+    border-radius: 50%;
+    background: #F7F7F7;
+    box-shadow: 9px 9px 9px rgba(66, 188, 144, 0.29), -9px -9px 9px rgba(255, 255, 255, 0.78);
+    border: none;
+}
+
+.button:hover {
+    box-shadow: 3px 3px 9px rgba(66, 188, 144, 0.29), -3px -3px 9px rgba(255, 255, 255, 0.78);
+}
+.home-big-button {
+    width: 300px;
+    height: 300px;
+}
+.home-small-button {
+    width: 100px;
+    height: 100px;
+}
+.answer-button {
+    width: 150px;
+    height: 150px;
+    color: #F7F7F7;
+}
+
+.text {
+    text-align: center;
+    font-family: PoiretOne;
+    color: #42BC90;
+}
+
+.caption {
+    text-align: center;
+}
+
+.large-caption {}
+.normal-caption {}
+
+.text-box {
+    grid-area: text-box;
+    display: flex;
+
+    width: 60%;
+    max-width: 430px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: inset 4px 4px 4px rgba(66, 188, 144, 0.29);
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-text {
+    text-align: center;
+}
+

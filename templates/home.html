@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{%block text%}
+    <p class="text">Добро пожаловать в КиноВикторину!</p>
+{%endblock%}
+
+{% block body %}
+    <div class="grid home-buttons">
+        <div>
+            <a href="{{ url_for('quiz') }}">
+                <button class="button home-big-button "></button>
+             </a>
+            <h4 class=" text caption large-caption">
+            Викторина
+            </h4>
+        </div>
+
+        <div>
+             <a href="{{ url_for('about') }}" class="home-small-button">
+                <button class="button home-small-button"></button>
+             </a>
+            <h4 class="text caption normal-caption">
+                О нас
+            </h4>
+        </div>
+    </div>
+{% endblock %}
