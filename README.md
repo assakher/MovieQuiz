@@ -11,3 +11,4 @@ TODO:
  - create deployment settings
  - implement flash functionality
  - increase database size
+ - restructure db to use foreignkeys
